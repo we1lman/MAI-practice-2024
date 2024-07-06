@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Рекомендации по профилю обучения</h1>
+        <ul>
+            {% for rec in recommendations %}
+                <li>
+                    <strong>{{ rec.profile }}</strong>: {{ rec.description }} <br>
+                    <strong>Формы обучения:</strong> {{ ', '.join(rec.forms) }} <br>
+                    <strong>Рекомендуемая форма обучения:</strong> {{ ', '.join(rec.form_of_study) }}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/">Вернуться назад</a>
+    </div>
+</body>
+</html>

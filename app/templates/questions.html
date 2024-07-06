@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопросы</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentQuestionIndex = 0;
+            const questions = document.querySelectorAll(".question");
+            questions.forEach((question, index) => {
+                if (index === currentQuestionIndex) question.classList.add("active");
+            });
+
+            document.querySelector("#next-button").addEventListener("click", function() {
+                const currentQuestion = questions[currentQuestionIndex];
+                const selectedOption = currentQuestion.querySelector("input[type='radio']:checked");
+                if (!selectedOption) {
+                    alert("Пожалуйста, выберите вариант ответа.");
+                    return;
+                }
+
+                currentQuestion.classList.remove("active");
+                currentQuestionIndex++;
+                if (currentQuestionIndex < questions.length) {
+                    questions[currentQuestionIndex].classList.add("active");
+                } else {
+                    document.querySelector("#questions-form").submit();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ответьте на вопросы</h1>
+        <form id="questions-form" method="POST" action="{{ url_for('main.results') }}">
+            {{ form.hidden_tag() }}
+            <input type="hidden" name="interests" value="{{ interests }}">
+            <input type="hidden" name="math" value="{{ scores['math'] }}">
+            <input type="hidden" name="informatics" value="{{ scores['informatics'] }}">
+            <input type="hidden" name="russian" value="{{ scores['russian'] }}">
+            {% for question in questions %}
+                <div class="question">
+                    <p>{{ question.text }}</p>
+                    {% for option in question.options %}
+                        <p class="radio-label">
+                            <input type="radio" name="question_{{ question.id }}" value="{{ option.answer }}" required>
+                            <span>{{ option.answer }}</span>
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+            <button type="button" id="next-button">Далее</button>
+        </form>
+    </div>
+</body>
+</html>

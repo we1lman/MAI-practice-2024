@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Экспертная система для выбора профиля обучения</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Экспертная система для выбора профиля обучения</h1>
+        <form method="POST" action="/">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.interests.label }}<br>
+                {{ form.interests(size=32) }}
+            </p>
+            <p>
+                {{ form.math_score.label }}<br>
+                {{ form.math_score() }}
+            </p>
+            <p>
+                {{ form.informatics_score.label }}<br>
+                {{ form.informatics_score() }}
+            </p>
+            <p>
+                {{ form.russian_score.label }}<br>
+                {{ form.russian_score() }}
+            </p>
+            <button type="submit">Получить рекомендации</button>
+        </form>
+    </div>
+</body>
+</html>

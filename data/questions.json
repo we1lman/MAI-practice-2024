@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "text": "Интересуетесь ли вы созданием математических моделей для описания физических явлений и процессов в механике?",
+        "options": [
+            {
+                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "influence": {
+                    "math_modeling": 3,
+                    "statistical_analysis": 1,
+                    "software_systems": 1,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "influence": {
+                    "math_modeling": 2,
+                    "statistical_analysis": 2,
+                    "software_systems": 2,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 2,
+                    "software_systems": 2,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Не интересуюсь.",
+                "influence": {
+                    "math_modeling": 0,
+                    "statistical_analysis": 2,
+                    "software_systems": 3,
+                    "informatics": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Насколько вам интересен анализ данных и оптимизация сложных технических и экономических систем?",
+        "options": [
+            {
+                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 3,
+                    "software_systems": 1,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "influence": {
+                    "math_modeling": 2,
+                    "statistical_analysis": 2,
+                    "software_systems": 2,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 2,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Не интересуюсь.",
+                "influence": {
+                    "math_modeling": 0,
+                    "statistical_analysis": 0,
+                    "software_systems": 3,
+                    "informatics": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Интересуетесь ли вы математическими основами информатики и программным обеспечением систем обработки информации и управления?",
+        "options": [
+            {
+                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 3,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 2,
+                    "software_systems": 3,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 2,
+                    "software_systems": 2,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Не интересуюсь.",
+                "influence": {
+                    "math_modeling": 0,
+                    "statistical_analysis": 1,
+                    "software_systems": 1,
+                    "informatics": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "Насколько вам интересны информатика и компьютерные науки?",
+        "options": [
+            {
+                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 2,
+                    "informatics": 3
+                }
+            },
+            {
+                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 2,
+                    "software_systems": 2,
+                    "informatics": 3
+                }
+            },
+            {
+                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 2,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Не интересуюсь.",
+                "influence": {
+                    "math_modeling": 0,
+                    "statistical_analysis": 1,
+                    "software_systems": 2,
+                    "informatics": 1
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "Как вы оцениваете свои математические способности и интерес к математике?",
+        "options": [
+            {
+                "answer": "Математика — мой любимый предмет, я силен в ней и хотел бы продолжать изучение.",
+                "influence": {
+                    "math_modeling": 3,
+                    "statistical_analysis": 3,
+                    "software_systems": 3,
+                    "informatics": 2
+                }
+            },
+            {
+                "answer": "Я хорошо разбираюсь в математике, но предпочитаю больше прикладные аспекты.",
+                "influence": {
+                    "math_modeling": 2,
+                    "statistical_analysis": 2,
+                    "software_systems": 2,
+                    "informatics": 3
+                }
+            },
+            {
+                "answer": "Математика интересна, но я больше заинтересован в программировании и компьютерных науках.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 2,
+                    "informatics": 3
+                }
+            },
+            {
+                "answer": "Математика не мой сильный предмет.",
+                "influence": {
+                    "math_modeling": 0,
+                    "statistical_analysis": 0,
+                    "software_systems": 1,
+                    "informatics": 2
+                }
+            }
+        ]
+    }
+]

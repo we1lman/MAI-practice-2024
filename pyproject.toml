@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mai-practice-2024"
+version = "0.1.0"
+description = "проект для выбора профиля обучения"
+authors = ["we1lman <andrey.velma2005@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+flask-wtf = "^1.2.1"
+requests = "^2.32.3"
+streamlit = "^1.36.0"
+flask-swagger-ui = "^4.11.1"
+chardet = "^5.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
