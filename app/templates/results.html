@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <title>Результаты</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .container {
+            max-width: 800px;
+        }
+
+        .recommendations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .recommendations li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .recommendations li strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Рекомендации по профилю обучения</h1>
-        <ul>
-            {% for rec in recommendations %}
+        <div class="recommendations">
+            <ul>
+                {% for rec in recommendations %}
                 <li>
-                    <strong>{{ rec.profile }}</strong>: {{ rec.description }} <br>
-                    <strong>Формы обучения:</strong> {{ ', '.join(rec.forms) }} <br>
-                    <strong>Рекомендуемая форма обучения:</strong> {{ ', '.join(rec.form_of_study) }}
+                    <strong>{{ rec.profile }}</strong><br>
+                    <span>{{ rec.description }}</span><br>
+                    <strong>Формы обучения:</strong> {{ ', '.join(rec.forms) }}<br>
+                    <strong>Рекомендуемая форма обучения:</strong> {{ ', '.join(rec.form_of_study) }}<br>
                 </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
         <a href="/">Вернуться назад</a>
     </div>
 </body>
