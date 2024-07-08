@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "text": "Интересуетесь ли вы созданием математических моделей для описания физических явлений и процессов в механике?",
+        "text": "Какой проект вам кажется самым интересным?",
         "options": [
             {
-                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "answer": "Создать компьютерную модель для предсказания погоды.",
                 "influence": {
                     "math_modeling": 3,
                     "statistical_analysis": 1,
@@ -13,29 +13,29 @@
                 }
             },
             {
-                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "answer": "Анализировать данные для улучшения работы компаний и заводов.",
                 "influence": {
-                    "math_modeling": 2,
-                    "statistical_analysis": 2,
-                    "software_systems": 2,
+                    "math_modeling": 1,
+                    "statistical_analysis": 3,
+                    "software_systems": 1,
                     "informatics": 1
                 }
             },
             {
-                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
+                "answer": "Разработать программу для управления роботами.",
                 "influence": {
                     "math_modeling": 1,
-                    "statistical_analysis": 2,
-                    "software_systems": 2,
-                    "informatics": 2
+                    "statistical_analysis": 1,
+                    "software_systems": 3,
+                    "informatics": 1
                 }
             },
             {
-                "answer": "Не интересуюсь.",
+                "answer": "Изучать и придумывать новые способы, как компьютеры могут 'думать'.",
                 "influence": {
-                    "math_modeling": 0,
-                    "statistical_analysis": 2,
-                    "software_systems": 3,
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 1,
                     "informatics": 3
                 }
             }
@@ -43,10 +43,28 @@
     },
     {
         "id": 2,
-        "text": "Насколько вам интересен анализ данных и оптимизация сложных технических и экономических систем?",
+        "text": "Что вам больше всего нравится делать в свободное время?",
         "options": [
             {
-                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "answer": "Читать о новых технологиях и компьютерных разработках.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 1,
+                    "informatics": 3
+                }
+            },
+            {
+                "answer": "Программировать и разрабатывать собственные приложения или игры.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 3,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Анализировать данные и искать закономерности в окружающем мире.",
                 "influence": {
                     "math_modeling": 1,
                     "statistical_analysis": 3,
@@ -55,113 +73,95 @@
                 }
             },
             {
-                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "answer": "Решать головоломки и математические задачи.",
                 "influence": {
-                    "math_modeling": 2,
-                    "statistical_analysis": 2,
-                    "software_systems": 2,
-                    "informatics": 1
-                }
-            },
-            {
-                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
-                "influence": {
-                    "math_modeling": 1,
+                    "math_modeling": 3,
                     "statistical_analysis": 1,
-                    "software_systems": 2,
-                    "informatics": 2
-                }
-            },
-            {
-                "answer": "Не интересуюсь.",
-                "influence": {
-                    "math_modeling": 0,
-                    "statistical_analysis": 0,
-                    "software_systems": 3,
-                    "informatics": 3
+                    "software_systems": 1,
+                    "informatics": 1
                 }
             }
         ]
     },
     {
         "id": 3,
-        "text": "Интересуетесь ли вы математическими основами информатики и программным обеспечением систем обработки информации и управления?",
+        "text": "Какая задача кажется вам наиболее увлекательной?",
         "options": [
             {
-                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "answer": "Анализ больших объемов данных для нахождения лучших решений в бизнесе или промышленности.",
                 "influence": {
                     "math_modeling": 1,
-                    "statistical_analysis": 1,
-                    "software_systems": 3,
-                    "informatics": 2
+                    "statistical_analysis": 3,
+                    "software_systems": 1,
+                    "informatics": 1
                 }
             },
             {
-                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
+                "answer": "Изучение и разработка новых алгоритмов для искусственного интеллекта.",
                 "influence": {
                     "math_modeling": 1,
-                    "statistical_analysis": 2,
-                    "software_systems": 3,
-                    "informatics": 2
-                }
-            },
-            {
-                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
-                "influence": {
-                    "math_modeling": 1,
-                    "statistical_analysis": 2,
-                    "software_systems": 2,
-                    "informatics": 2
-                }
-            },
-            {
-                "answer": "Не интересуюсь.",
-                "influence": {
-                    "math_modeling": 0,
                     "statistical_analysis": 1,
                     "software_systems": 1,
                     "informatics": 3
+                }
+            },
+            {
+                "answer": "Создание программы, которая может управлять сложными системами, такими как роботы или умные дома.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 3,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Разработка модели для прогнозирования и управления реальными системами, такими как погода или движение автомобилей.",
+                "influence": {
+                    "math_modeling": 3,
+                    "statistical_analysis": 1,
+                    "software_systems": 1,
+                    "informatics": 1
                 }
             }
         ]
     },
     {
         "id": 4,
-        "text": "Насколько вам интересны информатика и компьютерные науки?",
+        "text": "Какую роль в команде вы предпочли бы выполнять?",
         "options": [
             {
-                "answer": "Очень интересуюсь и хотел бы углубленно изучать эту область.",
+                "answer": "Анализировать данные и находить оптимальные решения.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 3,
+                    "software_systems": 1,
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Исследовать и придумывать новые технологии в области компьютерных наук.",
                 "influence": {
                     "math_modeling": 1,
                     "statistical_analysis": 1,
-                    "software_systems": 2,
+                    "software_systems": 1,
                     "informatics": 3
                 }
             },
             {
-                "answer": "Интересуюсь, но предпочитаю больше практическое применение, чем теоретические исследования.",
-                "influence": {
-                    "math_modeling": 1,
-                    "statistical_analysis": 2,
-                    "software_systems": 2,
-                    "informatics": 3
-                }
-            },
-            {
-                "answer": "Интерес есть, но предпочел бы другой аспект компьютерных наук.",
+                "answer": "Программировать и разрабатывать системы управления.",
                 "influence": {
                     "math_modeling": 1,
                     "statistical_analysis": 1,
-                    "software_systems": 2,
-                    "informatics": 2
+                    "software_systems": 3,
+                    "informatics": 1
                 }
             },
             {
-                "answer": "Не интересуюсь.",
+                "answer": "Разрабатывать математические модели и анализировать их.",
                 "influence": {
-                    "math_modeling": 0,
+                    "math_modeling": 3,
                     "statistical_analysis": 1,
-                    "software_systems": 2,
+                    "software_systems": 1,
                     "informatics": 1
                 }
             }
@@ -169,42 +169,42 @@
     },
     {
         "id": 5,
-        "text": "Как вы оцениваете свои математические способности и интерес к математике?",
+        "text": "Какой вид деятельности вам больше всего по душе?",
         "options": [
             {
-                "answer": "Математика — мой любимый предмет, я силен в ней и хотел бы продолжать изучение.",
+                "answer": "Оптимизация и анализ сложных систем, таких как производственные процессы или логистика.",
                 "influence": {
-                    "math_modeling": 3,
+                    "math_modeling": 1,
                     "statistical_analysis": 3,
-                    "software_systems": 3,
-                    "informatics": 2
+                    "software_systems": 1,
+                    "informatics": 1
                 }
             },
             {
-                "answer": "Я хорошо разбираюсь в математике, но предпочитаю больше прикладные аспекты.",
-                "influence": {
-                    "math_modeling": 2,
-                    "statistical_analysis": 2,
-                    "software_systems": 2,
-                    "informatics": 3
-                }
-            },
-            {
-                "answer": "Математика интересна, но я больше заинтересован в программировании и компьютерных науках.",
+                "answer": "Исследование новых методов и алгоритмов в информатике.",
                 "influence": {
                     "math_modeling": 1,
                     "statistical_analysis": 1,
-                    "software_systems": 2,
+                    "software_systems": 1,
                     "informatics": 3
                 }
             },
             {
-                "answer": "Математика не мой сильный предмет.",
+                "answer": "Решение физических и инженерных задач с помощью математических моделей.",
                 "influence": {
-                    "math_modeling": 0,
-                    "statistical_analysis": 0,
+                    "math_modeling": 3,
+                    "statistical_analysis": 1,
                     "software_systems": 1,
-                    "informatics": 2
+                    "informatics": 1
+                }
+            },
+            {
+                "answer": "Разработка программного обеспечения для различных приложений.",
+                "influence": {
+                    "math_modeling": 1,
+                    "statistical_analysis": 1,
+                    "software_systems": 3,
+                    "informatics": 1
                 }
             }
         ]
