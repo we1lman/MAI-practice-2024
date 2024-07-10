@@ -61,6 +61,7 @@ MAI-practice-2024/
 │       ├── outcomes.json
 │       └── questions.json
 ├── .gitignore
+├── LICENSE
 ├── README.md
 ├── config.py
 ├── pyproject.lock
