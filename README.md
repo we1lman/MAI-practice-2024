@@ -45,25 +45,27 @@
 MAI-practice-2024/
 ├── app/
 │   ├── __init__.py
-│   ├── forms.py
 │   ├── routes.py
+│   ├── forms.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── decision_engine.py
 │   ├── templates/
 │   │   ├── index.html
 │   │   ├── questions.html
-│   │   └── results.html
+│   │   └── result.html
 │   ├── static/
-│   │   └── style.css
-│   └── utils/
-│       ├── __init__.py
-│       └── decision_engine.py
-├── data/
-│   ├── questions.json
-│   └── outcomes.json
+│   │   └── css/
+│   │       └── style.css
+│   └── data/
+│       ├── outcomes.json
+│       └── questions.json
+├── .gitignore
+├── README.md
 ├── config.py
-├── run.py
-├── pyproject.toml
-├── poetry.lock
-└── README.md
+├── pyproject.lock
+├── poetry.toml
+└── run.py
 ```
 
 

@@ -3,8 +3,8 @@ import json
 
 class DecisionEngine:
     def __init__(self):
-        self.questions = self.load_data('data/questions.json')
-        self.outcomes = self.load_data('data/outcomes.json')
+        self.questions = self.load_data('app/data/questions.json')
+        self.outcomes = self.load_data('app/data/outcomes.json')
 
     def load_data(self, filepath):
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -29,7 +29,7 @@ class DecisionEngine:
         form_of_study = self.determine_form_of_study(scores)
         for rec in recommendations:
             rec['form_of_study'] = form_of_study
-        return recommendations[:2]  # Возвращаем 1-2 лучших результата
+        return recommendations[:2]
 
     def determine_form_of_study(self, scores):
         total_score = scores['math'] + scores['informatics'] + scores['russian']

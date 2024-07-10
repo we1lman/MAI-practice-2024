@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Экспертная система для выбора профиля обучения</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Экспертная система для выбора профиля обучения</h1>
-        <form method="POST" action="/">
+        <form method="POST" action="/" id="userForm">
             {{ form.hidden_tag() }}
-            <p>
+            <div>
+                {{ form.name.label }}<br>
+                {{ form.name(size=32, pattern="^\S+\s+\S+\s+\S+$", title="Введите ФИО полностью", class_="input-field") }}
+            </div>
+            <div>
+                {{ form.email.label }}<br>
+                {{ form.email(size=32, class_="input-field", type="email", title="Введите корректный email.") }}
+            </div>
+            <div>
                 {{ form.interests.label }}<br>
                 {{ form.interests(size=32) }}
-            </p>
-            <p>
+            </div>
+            <div>
                 {{ form.math_score.label }}<br>
-                {{ form.math_score() }}
-            </p>
-            <p>
+                {{ form.math_score(class_="input-field", min="0", max="100", title="Пожалуйста, выберите значение от 0 до 100.") }}
+            </div>
+            <div>
                 {{ form.informatics_score.label }}<br>
-                {{ form.informatics_score() }}
-            </p>
-            <p>
+                {{ form.informatics_score(class_="input-field", min="0", max="100", title="Пожалуйста, выберите значение от 0 до 100.") }}
+            </div>
+            <div>
                 {{ form.russian_score.label }}<br>
-                {{ form.russian_score() }}
-            </p>
+                {{ form.russian_score(class_="input-field", min="0", max="100", title="Пожалуйста, выберите значение от 0 до 100.") }}
+            </div>
             <button type="submit">Получить рекомендации</button>
         </form>
     </div>
